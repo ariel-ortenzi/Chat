@@ -1,0 +1,129 @@
+/* General body background */
+body {
+    background-color: #121212; 
+    color: #e0e0e0;
+}
+
+/* Messages container */
+#messageLogs {
+    overflow-y: auto;
+    height: 400PX; 
+    padding: 15px;
+    background-color: #333333; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    scrollbar-width: thin;
+}
+
+/* Message */
+#messageLogs .message {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    max-width: 70%; 
+    word-wrap: break-word;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+/* User message */
+#messageLogs .message.user {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    color: white; 
+    text-align: right;
+    margin-left: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Other users messages */
+#messageLogs .message.other {
+    background: linear-gradient(135deg, #fddb92, #d1fdff);
+    color: #333;
+    text-align: left;
+    margin-right: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Scrollbar */
+#messageLogs::-webkit-scrollbar {
+    width: 8px;
+}
+
+#messageLogs::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 4px;
+}
+
+#messageLogs::-webkit-scrollbar-thumb:hover {
+    background-color: #888888;
+}
+
+/* Input field and buttons */
+.input-group {
+    display: flex;
+    gap: 5px;
+}
+
+.input-group .form-control {
+    background-color: #2a2a2a; 
+    color: #e0e0e0;
+    border: 1px solid #444444;
+}
+
+.input-group .btn {
+    background-color: #444444;
+    color: #e0e0e0;
+    border: 1px solid #555555;
+}
+
+.input-group .btn:hover {
+    background-color: #555555;
+}
+
+/* Card background and footer */
+.card {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    border: none;
+}
+
+.card-header {
+    background-color: #333333;
+    color: white;
+}
+
+.card-footer {
+    background-color: #2a2a2a;
+}
+
+/* Additional styles for better readability */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Emojis */
+#emojiPicker {
+    display: none;
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#emojiPicker .emoji {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin: 2px;
+}
+
+#emojiPicker .emoji:hover {
+    background-color: #555;
+}
