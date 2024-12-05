@@ -42,7 +42,7 @@ io.on("connection", (socket) => {
     console.log(`Nuevo cliente conectado con el ID: ${socket.id}`);
     socket.on("newUser", (data) => {
         socket.broadcast.emit("newUser", data);
-        io.emit("messageLogs", messages);
+        socket.emit("messageLogs", messages);
     });
 
     socket.on("message", async (data) => {
